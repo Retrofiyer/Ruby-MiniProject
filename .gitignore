@@ -1,0 +1,28 @@
+# Ignorar dependencias instaladas por Bundler
+/vendor/bundle
+
+# Archivos temporales y de configuración de entorno
+/.env
+/.env.local
+/.env.*.local
+
+# Archivos de registro
+/log/*
+!/log/.keep
+
+# Archivos de PID y sockets
+/tmp/pids/*
+/tmp/sockets/*
+
+# Archivos generados por editor y sistema operativo
+*.swp
+*~
+.DS_Store
+*.bak
+*.tmp
+Thumbs.db
+
+# Configuración específica de Ruby
+/.bundle
+/.ruby-version
+/.ruby

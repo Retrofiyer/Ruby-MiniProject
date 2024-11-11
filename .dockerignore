@@ -1,0 +1,15 @@
+# Archivos de entorno locales
+.env
+.env.*
+
+# Ignorar archivos de configuración específicos de editor
+*.swp
+*~
+.DS_Store
+*.bak
+*.tmp
+Thumbs.db
+
+# Archivos de log y temporales
+/log/*
+/tmp/*
