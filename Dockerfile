@@ -1,13 +1,15 @@
-FROM ruby:3.3.6
+FROM ruby:3.3.4-alpine
 
-WORKDIR /usr/src/app
+RUN apk add --no-cache build-base gcc libc-dev linux-headers
+
+WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 
-RUN bundle install
+RUN bundle install --without development test
 
 COPY . .
 
 EXPOSE 4567
 
-CMD ["ruby", "app.rb"]
+CMD ["ruby", "app.rb", "-o", "0.0.0.0"]
