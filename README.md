@@ -1,5 +1,7 @@
 # Ruby-MiniProject
 
+![image](https://github.com/user-attachments/assets/94a02130-737c-4af7-8da1-d9be3e5ff0e9)
+
 ## About The Project
 
 This is a basic "Hello World" project in Ruby using the Sinatra framework.
